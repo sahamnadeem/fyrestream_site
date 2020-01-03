@@ -1,0 +1,312 @@
+body {
+  height: 20000px;
+  background: rgb(241,241,241);
+}
+
+.topline {
+  width: 100%;
+  height: 10px;
+  background: red;
+}
+
+#actions {
+  margin-left: 2em;
+  float: right;
+}
+
+.normal-link {
+  text-decoration: none;
+  color: white;
+}
+
+.make-button {
+  margin: 5px;
+  padding: 5px 15px 5px 15px;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.border-red {
+  border: 2px solid #dc1010;
+}
+
+body {
+  height: 100vh;
+}
+
+.body-image {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+}
+
+.login-form {
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  width: 80%;
+  margin: auto;
+}
+
+#forget {
+  float: right;
+}
+
+.input-st {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.login {
+  padding: 8px 5PX 8PX 5PX;
+  border: none;
+  border-radius: 3px;
+  background-color: #cf0000;
+  color: white;
+}
+
+.login:hover {
+  background: #cf0000;
+}
+
+.footer {
+  background-color: #d0d0d0;
+}
+
+#brand-img {
+  width: 80px;
+}
+
+.nav-item a {
+  font-size: 0.8em;
+}
+
+#user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 15%;
+}
+
+.fixed-col {
+  position: sticky;
+}
+
+.card-fyre {
+  background: white;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.24);
+  border-radius: 10px;
+}
+
+.card-fyre-header {
+  padding: 10px 0px 10px 0px;
+  overflow: hidden;
+}
+
+#activity-img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.activity-text {
+  margin: 0px;
+  font-size: 0.8em;
+  padding: 0px;
+}
+
+::-webkit-scrollbar {
+  margin: 15px;
+  width: 7px;
+  border-radius: 10px;
+  background-color: red;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(232,232,232);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: rgb(200,200,200);
+  border-radius: 10px;
+}
+
+#video-img {
+  width: 100px;
+}
+
+.btn.btn-primary.button-more {
+  border-radius: 5px;
+  border: 1px solid rgb(221,221,221);
+  background: transparent;
+  color: rgb(7,145,201);
+}
+
+.shaddow {
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.24);
+}
+
+.news {
+  display: block;
+  margin: auto;
+}
+
+.create-post {
+  background-color: rgba(228,228,228,0.77);
+}
+
+.tabs {
+  cursor: pointer;
+  height: 100%;
+  padding: 8px;
+}
+
+@media (max-width: 1000px) {
+  #news {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  #users {
+    display: none;
+  }
+}
+
+#inside-tabs {
+  margin-left: 20px;
+}
+
+.status {
+  width: 100%;
+  border: none;
+}
+
+.status:focus {
+  resize: none;
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(213,213,213);
+}
+
+.tag {
+  margin: 5px;
+  border-radius: 50px;
+  background: grey;
+  padding: 4px 15px 10px 15px;
+}
+
+.lss {
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#main-cont {
+  margin-top: 7em;
+}
+
+.top-bar {
+  border: 10px solid rgb(230,230,230);
+  border-radius: 20px;
+  background-color: rgb(255,255,255);
+}
+
+.side-user {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 10%;
+  height: 100%;
+  background-color: red;
+}
+
+.body-member {
+  width: 100%;
+}
+
+.member-body-head {
+  border-top-right-radius: 10px;
+  background-color: rgb(222,1,1);
+}
+
+.rating {
+  padding: 5px 10px 5px 10px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.btn-follow {
+  padding: 5px 5px 5px 5px;
+  background-image: linear-gradient(#ffd809,#b8a817);
+  font-size: 1em;
+  border: 1px solid #c50202;
+  border-radius: 5px;
+  padding: 10px 25px 10px 25px;
+}
+
+@media (max-width: 1000px) {
+  .side-user {
+    display: none;
+  }
+}
+
+.profile {
+  width: 70%;
+}
+
+.galary {
+  width: 100%;
+}
+
+.overflow-prof {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: black;
+  opacity: 0.5;
+  height: 70px;
+}
+
+.overley-prof-text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.img-box {
+  transition: transform .2s;
+}
+
+.img-box:hover {
+  z-index: 99;
+  transform: scale(1.5);
+}
+
+#photos {
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 4;
+  -moz-column-gap: 0px;
+  column-count: 4;
+  column-gap: 0px;
+}
+
+#photos img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.dropdown-item.active{
+    background-color: #ffffff !important;
+}
+
