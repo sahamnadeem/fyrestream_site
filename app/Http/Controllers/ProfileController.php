@@ -9,8 +9,12 @@ use Illuminate\Support\Facades\DB;
 class ProfileController extends Controller
 {
     public function index($id=0){
+        $followss = [];
+        $folp=[];
         $fol = User::with('followers')->whereId(auth()->id())->first();
-        foreach ($fol->followers as $t){$folp[] = $t->id;}
+        if ($fol->followers){
+            foreach ($fol->followers as $t){$folp[] = $t->id;}
+        }
         $follows = DB::table('followers')
             ->where('follower_id','=',auth()->id())
             ->whereIn('user_id',$folp)
@@ -18,9 +22,10 @@ class ProfileController extends Controller
         if ($follows->count()>0){
             foreach ($follows as $fols){
                 $followss[] = User::whereId($fols->user_id)->with('profile')->first();
+
             }
         }
-        dd($followss);
+
 
         $user = User::whereId($id !=0? $id : auth()->id())->with('profile')->first();
         $rating = $user->rating()->avg('rating')??1;

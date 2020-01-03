@@ -26,16 +26,16 @@
                         <div class="row m-0" style="padding: 5px 5px 5px 5px;font-size:10px;">
                             <div class="col m-auto p-0">
                                 <div class="row m-0">
-                                    @foreach($follows as $follow)
-                                    <div class="col m-auto">
-                                        <div style="width:50px; height:50px;position:relative;">
-
-                                            <img src="{{asset('assets/img/'.$follow->profile->picture)}}" width="50px;" style="border-radius:50%;" height="50px">
-
-                                            <i class="fas fa-circle" style="position: absolute;bottom: 0;right: 0;font-size: 1em;color: rgb(35,177,0);"></i>
-                                        </div>
-                                    </div>
-                                    @endforeach
+{{--                                    @if(count($followss)>0)--}}
+                                        @foreach($followss as $follow)
+                                            <div class="col m-auto">
+                                                <div style="width:50px; height:50px;position:relative;margin-bottom: 5px">
+                                                  <img src="{{asset('assets/img/'.$follow->profile->picture)}}" width="50px;" style="border-radius:50%;" height="50px">
+                                                    <i class="fas fa-circle" style="position: absolute;bottom: 0;right: 0;font-size: 1em;color: rgb(35,177,0);"></i>
+                                                </div>
+                                            </div>
+                                        @endforeach
+{{--                                     @endif--}}
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                                 <div class="col-2 col-sm-12 col-md-auto col-lg-auto col-xl-auto m-auto text-center" style="color: rgb(255,255,255);">
                                     @auth
                                         @if($user->id != auth()->id())
-                                            <button class="btn btn-primary btn-follow" type="button" style="color: rgb(6,5,5);"><strong>Follow</strong><i class="fas fa-user m-1"></i></button>
+                                            <button class="btn btn-primary btn-follow" type="button" id="follow" style="color: rgb(6,5,5);" value="{{$user->id}}"><strong>Follow</strong><i class="fas fa-user m-1"></i></button>
                                         @endif
                                     @endauth
 
@@ -162,7 +162,7 @@
                             <div class="profile">
                                 <div class="row m-0 p-0">
                                     <div class="col m-0 p-0">
-                                        <div style="width: 430px;"><img src="{{asset('assets/img/'.$follow->profile->picture)}}" width="100%"></div>
+                                        <div style="width: 430px;"><img src=" {{asset('assets/img/'.$user->profile->picture)}}" width="100%"></div>
                                         <div class="overley-prof-text mb-3">
                                             <div class="row m-0 p-2" style="font-size: 0.8em;">
                                                 <div class="col-auto"><span id="staus" class="tabs" style="border-bottom: 2px solid red; padding-bottom: 9px;color:red;"><span style="font-size: 12px;color:white;"><strong>All Photos</strong></span></span>
@@ -379,5 +379,34 @@
         $('#follo').click(function () {
 
         });
+
+        $('#follow').click(function () {
+            $('#follow').css('background', '#ffffff');
+
+
+            var follow = $(this).attr('value');
+            var user= '{{ $user->id }}';
+            $.ajax
+            ({
+                url: '/followers/',
+                type: "POST",
+                data: {follower_id:follow,user_id:user,_token:'{{ csrf_token() }}'},
+                success: function(data)
+                {
+                    alert(data.message);
+                }
+            });
+        });
+
+
+        // $("button").click(function(){
+        //     var color = clicked ? 'red' : 'blue';
+        //     $(this).css('background-color', color);
+        //     clicked = !clicked;
+        // });
     </script>
 @endpush
+
+
+
+

@@ -31,6 +31,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::get('/profile/{id}', 'ProfileController@index')->name('user_profile');
 
+//followers
+
+Route::post('/followers', 'FolllowController@index')->name('user_follow')->middleware('auth');
+
+
 
 Route::post('/logout',function (Request $request){
     Auth::logout();
