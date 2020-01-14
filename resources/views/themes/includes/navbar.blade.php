@@ -1,18 +1,36 @@
-<div class="topline" style="position:fixed;width:100%;top:0;z-index:999;"></div>
-<nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button" style="position:fixed;top:10px;width:100%;z-index:999">
+<div class="topline" style="position:fixed;width:100%;top:0;z-index:19;"></div>
+<nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button" style="position:fixed;top:6px;width:100%;z-index:19">
     <div class="container">
-        <div id="brand"><a class="navbar-brand" href="{{ route('welcome') }}"> <img id="brand-img" src="assets/img/1%20White%20Trim_%20Red%20Fill_%20White%20Stream.png" width="30"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+        <div id="brand" style="margin-right: 2em;"><i class="fa fa-bars"></i></div>
+        <div id="brand"><a class="navbar-brand" href="{{ route('welcome') }}"> <img id="brand-img" src="{{asset('assets/img/icons-ver-02---Cop White.png')}}" width="10px"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+
+        <div id="brand" style="margin-right: 1em;">
+            <div class="box">
+                <div class="vid">
+                    <img src="https://i.stack.imgur.com/vQGnW.png" height="100%" style="object-fit: cover; object-position: center;">
+                    <div class="top-over">
+                    </div>
+                    <div class="top-play">
+                        <i class="fa fa-play m-1"></i>
+                    </div>
+                </div>
+                <div class="txt">
+                    <p class="font-weight-bold m-0 p-0"><i class="fa fa-newspaper" style="color: red; margin-right: 4px;"></i>Fyre News</p>
+                    <p class="m-0 p-0" style="font-size: 0.8em">Watch Live BBC new London Tonight at 11pm</p>
+                </div>
+            </div>
+        </div>
         <div
-            class="collapse navbar-collapse" id="navcol-1">
+            class="collapse navbar-collapse m-auto" id="navcol-1">
             <ul class="nav navbar-nav nav-right ml-auto">
-                <li class="nav-item text-center" role="presentation"><img src="assets/img/videos.png" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">VIDEOS</a></li>
-                <li class="nav-item text-center" role="presentation"><img src="assets/img/members.png" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">MEMBERS</a></li>
-                <li class="nav-item text-center" role="presentation"><img src="assets/img/news.png" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">NEWS</a></li>
-                <li class="nav-item text-center" role="presentation"><img src="assets/img/classified.png" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">CLASSIFIED</a></li>
-                <li class="nav-item text-center" role="presentation"><img src="assets/img/invite.png" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">INVITE</a></li>
-                <li class="nav-item text-center" role="presentation"><img src="assets/img/more.png" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">MORE</a></li>
-                <li class="nav-item text-center" role="presentation"><img src="assets/img/uoload.png" width="50"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">UPLOAD</a></li>
-                <li class="nav-item text-center" role="presentation"><img src="assets/img/search.png" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">SEARCH</a></li>
+                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/videos.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">VIDEOS</a></li>
+                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/members.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">MEMBERS</a></li>
+                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/news.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">NEWS</a></li>
+                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/classified.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">CLASSIFIEDS</a></li>
+                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/invite.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">INVITE</a></li>
+                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/more.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">MORE</a></li>
+                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/uoload.png') }}" width="50"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">UPLOAD</a></li>
+                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/search.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">SEARCH</a></li>
                 <li class="nav-item text-center" role="presentation">
 
                     @guest
@@ -24,10 +42,11 @@
                     @endif
                     @else
 
-                    <div class="nav-item dropdown"><a class="dropdown-toggle active" data-toggle="dropdown" aria-expanded="false" id="user-img-link" href="#"><img id="user-img" src="assets/img/IMG_20151014_212349.jpg"></a>
+                    <div class="nav-item dropdown"><a class="dropdown-toggle active" data-toggle="dropdown" aria-expanded="false" id="user-img-link" href="#"><img id="user-img" src="{{asset('assets/img/'.auth()->user()->profile->picture)}}"></a>
                         <div class="dropdown-menu" role="menu">
                             <a></a>
                             <a class="dropdown-item active" role=""  href="{{route('profile')}}" style="color:black !important;"> <strong>{{ Auth::user()->name }}</strong></a>
+                            <a class="dropdown-item active" role=""  href="{{route('settings')}}" style="color:black !important;"> <strong>Settings</strong></a>
                             <a class="dropdown-item" role="presentation" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">Logout</a>

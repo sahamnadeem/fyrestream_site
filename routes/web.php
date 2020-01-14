@@ -34,6 +34,8 @@ Route::get('/profile/{id}', 'ProfileController@index')->name('user_profile');
 //followers
 
 Route::post('/followers', 'FolllowController@index')->name('user_follow')->middleware('auth');
+Route::get('/settings', 'SettingController@index')->name('settings')->middleware('auth');
+Route::post('/settings/{id}', 'SettingController@update')->name('update-profile')->middleware('auth');
 
 
 

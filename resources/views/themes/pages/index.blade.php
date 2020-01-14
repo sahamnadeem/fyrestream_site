@@ -3,7 +3,7 @@
 @section('main-content')
     <div class="container" style="margin-top:120px;">
         <div class="row">
-            <div class="col-3 fixed-col" id="users">
+            <div class="col-3 fixed-col pr-2" id="users">
                 <div class="row">
                     <div class="col">
                         <div class="card-fyre" style="position:sticky;">
@@ -12,7 +12,7 @@
                             </div>
                             <hr style="height: 1px;background: grey;background-color: rgb(234,234,234);margin:0px">
                             <div style="padding:6px;">
-                                <div class="container" style="height:400px;overflow-y:scroll;">
+                                 <div class="container" style="height:400px;overflow-y:scroll;">
                                     <div style="padding:10px">
                                         <div class="row">
                                             <div class="col-auto mt-auto" style="margin:0;padding:0px">
@@ -250,17 +250,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col p-0">
                 <div class="row">
                     <div class="col">
                         <div class="card-fyre" style="position:sticky;">
                             <div class="card-fyre-header create-post">
                                 <div id="inside-tabs"><span id="staus" class="tabs" style="border-bottom: 2px solid red; padding-bottom: 9px;color:red;"><i class="fas fa-quote-left" style="font-size: 10px;margin:5px"></i><span style="font-size: 12px;"><strong>Status</strong></span></span>
-                                    <input type="file" id="status-img" hidden=""><span id="OpenImgUpload" class="tabs" style="color: rgb(162,162,162);font-size: 12;"><i class="far fa-image" style="font-size: 10px;margin:5px"></i><span style="font-size: 12px;"><strong>Photo</strong></span></span>
+                                    <input type="file" id="status-img" hidden=""><span id="OpenImgUpload" class="tabs" style="color: rgb(162,162,162);font-size: 12px;"><i class="far fa-image" style="font-size: 10px;margin:5px"></i><span style="font-size: 12px;"><strong>Photo</strong></span></span>
                                     <span id="video" class="tabs" style="color: rgb(162,162,162);"><i class="fas fa-video" style="font-size: 10px;margin:5px"></i><span style="font-size: 12px;"><strong>VIdeo</strong></span></span>
                                 </div>
                             </div>
-                            <div id="statusdiv" style="display:none;"><textarea class="status" placeholder="Whats on your mind?" style="font-weight: 600;color: rgb(136,136,136);background-color: rgba(255,255,255,0);padding: 10px;" rows="3" spellcheck="true" wrap="soft"></textarea></div>
+                            <div id="statusdiv" style="display:none;"><textarea class="status" placeholder="Whats on your mind?" style="font-weight: 600;color: rgb(212,212,212);background-color: rgba(255,255,255,0);padding: 10px;" rows="3" spellcheck="true" wrap="soft"></textarea></div>
                             <div id="imgdiv">
                                 <div class="row m-0">
                                     <div class="col">
@@ -550,7 +550,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 fixed-col" id="news">
+            <div class="col-4 fixed-col pl-2" id="news">
                 <div class="row">
                     <div class="col">
                         <div class="card-fyre">

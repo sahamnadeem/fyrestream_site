@@ -71,7 +71,7 @@ class HomeController extends Controller
             'views'=>1,
             'youtube'=>'',
             'instagram'=>'',
-            'picture'=>''
+            'picture'=>'4.png'
         ]);
         if(Auth::attempt(['email'=>$request->email,'password'=>$request->password])){
             return redirect('/');

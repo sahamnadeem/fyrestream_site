@@ -25,12 +25,11 @@ class ProfileController extends Controller
 
             }
         }
-
-
+        $ext = auth()->user()->followings()->where('user_id', $id??auth()->id())->exists();
         $user = User::whereId($id !=0? $id : auth()->id())->with('profile')->first();
         $rating = $user->rating()->avg('rating')??1;
         $views = $this->getmb($user);
-        return view('themes.profile.index', compact('user','rating','views','followss'));
+        return view('themes.profile.index', compact('user','rating','views','followss','ext'));
     }
 
     public function getmb(User $user){
