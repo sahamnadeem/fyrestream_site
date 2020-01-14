@@ -28,14 +28,16 @@
                                 <form method="post" action="{{ route('login') }}">
                                     @csrf
                                     <div class="row justify-content-center">
-                                        <div class="col"><label style="font-size: 1em;color:black">Email </label><input type="text" name="email" id="email" class="input-st" placeholder="Email Address" required="" style="width:100%;"></div>
+                                        <div class="col"><label style="font-size: 1em;color:black">Email </label><input type="text" name="email" id="email" class="input-st" placeholder="Email Address" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Email Address'" required="" style="width:100%;"></div>
                                     </div>
                                     <div class="row justify-content-center mt-3">
-                                        <div class="col"><label style="font-size: 1em;color:black">Password</label><input type="password"  name="password" id="passowrd" placeholder="password" class="form-group input-st" required=""
+                                        <div class="col"><label style="font-size: 1em;color:black">Password</label><input type="password"  name="password" id="passowrd" placeholder="password" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'password'" class="form-group input-st" required=""
                                                                                                                                                                                                                             style="width:100%;"></div>
                                     </div>
                                     <div class="row justify-content-center">
-                                        <div class="col"><button class="btn btn-primary btn-block login" type="submit">SIGN IN</button></div>
+                                        <div class="col"><button class="btn  btn-block login" type="submit">SIGN IN</button></div>
                                     </div>
                                 </form>
 
@@ -86,16 +88,18 @@
                                 <form method="post" action="{{route('user-create')}}">
                                     @csrf
                                     <div class="row justify-content-center">
-                                        <div class="col"><label style="font-size: 1em;color:black">Username</label><input type="text" id="name" name="name" class="input-st" placeholder="User Name" required="" style="width:100%;"></div>
+                                        <div class="col"><label style="font-size: 1em;color:black">Username</label><input type="text" id="name" name="name" class="input-st" placeholder="User Name"onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'User Name'" required="" style="width:100%;"></div>
                                     </div>
                                     <div class="row justify-content-center">
-                                        <div class="col"><label style="font-size: 1em;color:black"> Email</label><input type="text" id="email"  name="email" class="input-st" required="" placeholder="Email Address" style="width:100%;"></div>
+                                        <div class="col"><label style="font-size: 1em;color:black"> Email</label><input type="text" id="email"  name="email" class="input-st" required="" placeholder="Email Address" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Email Address'" style="width:100%;"></div>
                                     </div>
                                     <div class="row justify-content-center mt-3">
                                         <div class="col"><label style="font-size: 1em;color:black">Password</label><label id="forget"><a href="#"   style="font-size: 0.7em;">Did you forget your password?</a></label><input type="password" id="password" name="password" class="form-group input-st" required="" style="width:100%;"></div>
                                     </div>
                                     <div class="row justify-content-center">
-                                        <div class="col"><button class="btn btn-primary btn-block login" type="submit">Singup </button></div>
+                                        <div class="col"><button class="btn  btn-block login" type="submit">Singup </button></div>
                                     </div>
                                     <p>Already have an acount <strong><a href="{{route('welcome')}}">Login</a></strong> </p>
                                 </form>

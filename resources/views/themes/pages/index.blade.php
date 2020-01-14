@@ -270,10 +270,10 @@
                             </div>
                             <div id="viddiv" style="display:none;"><textarea class="status" placeholder="Whats on your mind?" style="font-weight: 600;color: rgb(136,136,136);background-color: rgba(255,255,255,0);padding: 10px;" rows="3" spellcheck="true" wrap="soft"></textarea></div>
                             <hr style="height: 1px;background: grey;background-color: rgb(234,234,234);margin:0px;">
-                            <div style="padding:15px;"><span class="tag" style="color: rgb(164,164,164);background-color: rgb(234,234,234);"><i class="fas fa-user-plus" style="font-size: 0.8em;"></i>&nbsp;
+                            <div style="padding:15px;"><span class="tag" style="color: rgb(164,164,164);background-color: rgb(234,234,234);"><i class="fas fa-user-plus" style="font-size: 0.7em;"></i>
 
 
-<span style="font-size: 0.8em;"><strong>Tag Friends</strong></span></span><span class="tag" style="color: rgb(164,164,164);background-color: rgb(234,234,234);"><i class="fas fa-circle" style="font-size: 7px;margin:2px;"></i><i class="fas fa-circle" style="font-size: 7px;margin:2px;"></i><i class="fas fa-circle" style="font-size: 7px;margin:2px;"></i></span></div>
+<span style="font-size: 0.7em;"><strong>Tag Friends</strong></span></span><span class="tag" style="color: rgb(164,164,164);background-color: rgb(234,234,234);"><i class="fas fa-circle" style="font-size: 6px;margin:1.5px;"></i><i class="fas fa-circle" style="font-size: 6px;margin:1.5px;"></i><i class="fas fa-circle" style="font-size: 6px;margin:1.5px;"></i></span></div>
                         </div>
                     </div>
                 </div>
@@ -621,23 +621,24 @@
                             </div>
                             <div class="container">
                                 <div class="row">
-                                    <div class="col"><button class="btn btn-primary button-more" type="button" style="float:right;"><strong>See More Recomended</strong></button></div>
+                                    <div class="col"><button class="btn btn-primary button-more" type="button" style="font-size: 0.7em; float:right;"><strong>See More Recomended</strong></button></div>
                                 </div>
                             </div>
                             <hr style="height: 1px;background: grey;background-color: rgb(234,234,234);margin-top:25px">
                             <div class="row ml-auto">
-                                <div class="col-3 text-left"><img src="assets/img/facebook-laranja.png" width="50px">
+                                <div class="col-3 text-center ">
+                                    <img src="assets/img/facebook-laranja.png" width="40px">
                                     <p style="color: rgb(209,91,7);font-size: 0.8em;"><strong>FyreStream</strong></p>
                                 </div>
-                                <div class="col-8" style="width:100%;margin-left:20px;">
-                                    <p class="text-left" style="color: rgb(3,3,3);font-size: 1em;width:100%;">You must login or signup to find your facebook friends</p>
+                                <div class="col-8 p-0 " style="width:100%;margin-left:0px;">
+                                    <p class="text-left" style="color: rgb(3,3,3);font-size: 0.8em;width:100%; ">You must login or signup to find your facebook friends</p>
                                 </div>
                             </div>
-                            <hr style="height: 1px;background: grey;background-color: rgb(234,234,234);">
                         </div>
                     </div>
                 </div>
-                <div class="row shaddow sticky-top" style="margin:0px;padding:0px;background:white;border-radius:10px;top:7em;">
+                
+                <div class="row shaddow sticky-top mt-2" style="margin:0px;padding:0px;background:white;border-radius:10px;top:7em;">
                     <div class="col" style="padding:0px;">
                         <div class="row m-auto sticky-top">
                             <h6 id="member" class="m-3"><strong>Here the latest news for you</strong></h6>

@@ -25,11 +25,11 @@
             <ul class="nav navbar-nav nav-right ml-auto">
                 <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/videos.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">VIDEOS</a></li>
                 <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/members.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">MEMBERS</a></li>
-                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/news.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">NEWS</a></li>
+                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/Untitled-2.png') }}" width="35"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">FRIENDS</a></li>
                 <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/classified.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">CLASSIFIEDS</a></li>
                 <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/invite.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">INVITE</a></li>
                 <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/more.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">MORE</a></li>
-                <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/uoload.png') }}" width="50"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">UPLOAD</a></li>
+                <li class="nav-item text-center mt-auto " role="presentation"><img class="change" src="{{ asset('assets/img/uoload1.png') }}" width="50"><a class="nav-link active text-center " href="index.html" style="color: #ffffff;">UPLOAD</a></li>
                 <li class="nav-item text-center mt-auto" role="presentation"><img src="{{ asset('assets/img/search.png') }}" width="30"><a class="nav-link active text-center" href="index.html" style="color: #ffffff;">SEARCH</a></li>
                 <li class="nav-item text-center" role="presentation">
 
@@ -42,7 +42,7 @@
                     @endif
                     @else
 
-                    <div class="nav-item dropdown"><a class="dropdown-toggle active" data-toggle="dropdown" aria-expanded="false" id="user-img-link" href="#"><img id="user-img" src="{{asset('assets/img/'.auth()->user()->profile->picture)}}"></a>
+                    <div class="nav-item dropdown"><a class="dropdown-toggle active" data-toggle="dropdown" aria-expanded="false" id="user-img-link" href="#" style="color: white; font-size: 20px;"><img id="user-img" src="{{asset('assets/img/'.auth()->user()->profile->picture)}}"></a>
                         <div class="dropdown-menu" role="menu">
                             <a></a>
                             <a class="dropdown-item active" role=""  href="{{route('profile')}}" style="color:black !important;"> <strong>{{ Auth::user()->name }}</strong></a>
