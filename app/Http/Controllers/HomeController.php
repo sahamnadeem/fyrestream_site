@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\RegisterRequest;
+use App\Post;
 use App\Profile;
 use Illuminate\Http\Request;
 use App\User;
@@ -25,11 +26,15 @@ class HomeController extends Controller
 
     public function index()
     {
-//        $d = (auth()->user()->id);
-//        dd($d);
-
         if (\auth()->user()){
-            return view('themes.pages.index');
+            $fol = [];
+            foreach (auth()->user()->followings as $following) {
+                $fol[] = $following->id;
+            }
+            $posts = Post::with(['user','media'=>function($q){
+                return $q->limit(4);
+            },'type','tags'])->whereIn('user_id',$fol)->orderBy('created_at','desc')->paginate(15);
+            return view('themes.pages.index', compact('posts'));
         }else{
             return view('welcome');
         }
@@ -39,7 +44,7 @@ class HomeController extends Controller
     public function login(Request $request)
     {
         if (Auth::attempt(["email" => $request->email, "password" =>$request->password])) {
-                return view('themes.pages.index');
+                return redirect('/');
         }else{
             return redirect()->back();
         }

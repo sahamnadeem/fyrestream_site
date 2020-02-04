@@ -85,8 +85,8 @@ body {
 }
 
 #user-img {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   margin-top: 15%;
 }
@@ -197,10 +197,11 @@ body {
 }
 
 .tag {
-  margin: 5px;
+    margin-top: -5px;
+  margin: 2px;
   border-radius: 50px;
   background: grey;
-  padding: 4px 15px 10px 15px;
+  padding: 0px 10px 5px 10px;
 }
 
 .lss {
@@ -292,7 +293,7 @@ body {
   transform: scale(1.5);
 }
 
-#photos {
+.photoskl {
   line-height: 0;
   -webkit-column-count: 4;
   -webkit-column-gap: 0px;
@@ -302,7 +303,7 @@ body {
   column-gap: 0px;
 }
 
-#photos img {
+.photoskl img {
   width: 100% !important;
   height: auto !important;
 }
@@ -354,8 +355,8 @@ body {
 .nav-tabs {
     text-align:center;
 }
-input:focus { 
-  outline: none; 
+input:focus {
+  outline: none;
 }
 .btn:focus,.btn:active {
   outline: none !important;
@@ -374,4 +375,13 @@ input:focus {
   border-right: .3em solid transparent;
   border-bottom: 0;
   border-left: .3em solid transparent;
+}
+.myupdatebtn:hover{
+    background-color: #800020;
+}
+.myupdatebtn:active{
+    background-color: #800020;
+}
+.status{
+    color: black!important;
 }

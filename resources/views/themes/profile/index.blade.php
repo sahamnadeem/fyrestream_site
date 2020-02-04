@@ -220,16 +220,27 @@
                                 </div>
                                 <br/>
                                 <div class="row m-1 p-1" style="overflow-y:scroll;height:700px;overflow-x:hidden;" id="all_pics">
-                                    <div class="col m-auto" id="photos">
+                                    <div class="col m-auto photoskl">
                                         <div>
-                                            @for($i=0; $i<=25; $i++)
-                                                <a href="{{ asset('assets/img/IMG_20151014_212349.jpg') }}" class="js-smartPhoto" data-caption="bear" data-id="bear" data-group="animal"><img class="img-box" src="{{ asset('assets/img/IMG_20151014_212349.jpg') }}"></a>
-                                            @endfor
+                                            <a class="js-smartPhoto" href="{{ asset('assets/img/IMG_20151014_212349.jpg') }}" data-caption="bear" data-id="bear" data-group="animal"><img class="img-box" src="{{ asset('assets/img/IMG_20151014_212349.jpg') }}"></a>
+                                            <img class="img-box" src="{{ asset('assets/img/1__-vJQqeCmpw-kghDFX8yJw.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/30AE2103-2CDD-4270-979B-A71AFF791F17.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/Ball2.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/building-your-first-app-with-vuejs.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/IMG-20191205-WA0042_enhanced_colors_supreme.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/repository-open-graph-template.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/repository-open-graph-template.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/repository-open-graph-template.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/repository-open-graph-template.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/IMG-20191205-WA0042_enhanced_colors_supreme.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/Ball2.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/repository-open-graph-template.png') }}">
+                                            <img class="img-box" src="{{ asset('assets/img/repository-open-graph-template.png') }}">
                                         </div>
-                                </div>
+                                    </div>
                                 </div>
                                 <div class="row m-1 p-1" style="display: none;overflow-y:scroll;height:700px;overflow-x:hidden;" id="all_vids">
-                                    <div class="col m-auto" id="photos">
+                                    <div class="col m-auto photoskl">
                                         <div>
                                             <a class="js-smartPhoto" href="{{ asset('assets/img/IMG_20151014_212349.jpg') }}" data-caption="bear" data-id="bear" data-group="animal"><img class="img-box" src="{{ asset('assets/img/IMG_20151014_212349.jpg') }}"></a>
                                             <img class="img-box" src="{{ asset('assets/img/1__-vJQqeCmpw-kghDFX8yJw.png') }}">
@@ -249,7 +260,7 @@
                                     </div>
                                 </div>
                                 <div class="row m-1 p-1" style="display: none;overflow-y:scroll;height:700px;overflow-x:hidden;" id="all_more">
-                                    <div class="col m-auto" id="photos">
+                                    <div class="col m-auto photoskl">
                                         <div>
                                             @for($i=0; $i<=25; $i++)
                                                 <img class="img-box" src="{{ asset('assets/img/IMG_20151014_212349.jpg') }}">
@@ -258,7 +269,7 @@
                                     </div>
                                 </div>
                                 <div class="row m-1 p-1" style="display: none;overflow-y:scroll;height:700px;overflow-x:hidden;" id="all_spot">
-                                    <div class="col m-auto" id="photos">
+                                    <div class="col m-auto photoskl">
                                         <div>
                                             @for($i=0; $i<=25; $i++)
                                                 <img class="img-box" src="{{ asset('assets/img/IMG_20151014_212349.jpg') }}">
@@ -267,7 +278,7 @@
                                     </div>
                                 </div>
                                 <div class="row m-1 p-1" style="display: none;overflow-y:scroll;height:700px;overflow-x:hidden;" id="all_follo">
-                                    <div class="col m-auto" id="photos">
+                                    <div class="col m-auto photoskl">
                                         <div>
                                             @for($i=0; $i<=25; $i++)
                                                 <img class="img-box" src="{{ asset('assets/img/IMG_20151014_212349.jpg') }}">

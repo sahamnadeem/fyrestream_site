@@ -82,7 +82,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-danger btn-block" type="submit">Update</button>
+                    <button class="btn btn-danger btn-block myupdatebtn" type="submit">Update</button>
                 </div>
             </div>
         </form>

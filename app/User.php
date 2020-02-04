@@ -56,4 +56,8 @@ class User extends Authenticatable
     public function rater(){
         return $this->hasMany(Rating::class,'rater_id','id');
     }
+
+    public function posts(){
+        return $this->hasMany(Post::class,'user_id','id');
+    }
 }

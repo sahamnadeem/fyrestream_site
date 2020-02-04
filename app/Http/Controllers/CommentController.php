@@ -12,6 +12,9 @@ class CommentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function create_comment(Request $request){
+        dd($request->all());
+    }
     public function index()
     {
         //

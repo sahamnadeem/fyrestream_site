@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab5addfd-12b6-4f8d-9aed-371762b5c452" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/newapp.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/themes/settings/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/newapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/newapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FolllowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FolllowController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/RegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/RegisterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newapp.zip" beforeDir="false" afterPath="$PROJECT_DIR$/newapp.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/themes/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/themes/includes/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/themes/includes/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/themes/includes/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/themes/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/themes/layouts/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/themes/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/themes/pages/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/themes/profile/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/themes/profile/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/themes/settings/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/themes/settings/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -119,6 +123,7 @@
       <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
       <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/embed/embed" />
     </include_path>
   </component>
   <component name="ProjectId" id="1VYqOI2IcmjxwhOFv8GN1YE9gFI" />
@@ -188,7 +193,24 @@
       <workItem from="1578916381192" duration="20000" />
       <workItem from="1578926166572" duration="3656000" />
       <workItem from="1578941946580" duration="140000" />
-      <workItem from="1578987829064" duration="2276000" />
+      <workItem from="1578987829064" duration="4020000" />
+      <workItem from="1579008794543" duration="1788000" />
+      <workItem from="1579083052912" duration="7108000" />
+      <workItem from="1579093574684" duration="3495000" />
+      <workItem from="1579152938396" duration="3645000" />
+      <workItem from="1579194982129" duration="27000" />
+      <workItem from="1579265460435" duration="399000" />
+      <workItem from="1580396264927" duration="1216000" />
+      <workItem from="1580453941060" duration="5123000" />
+      <workItem from="1580464204050" duration="387000" />
+      <workItem from="1580470944738" duration="3453000" />
+      <workItem from="1580485036152" duration="3570000" />
+      <workItem from="1580490907923" duration="80000" />
+      <workItem from="1580660211950" duration="599000" />
+      <workItem from="1580709506317" duration="65000" />
+      <workItem from="1580754099342" duration="4255000" />
+      <workItem from="1580792405959" duration="2217000" />
+      <workItem from="1580806487739" duration="1291000" />
     </task>
     <servers />
   </component>
@@ -211,11 +233,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/themes/pages/index.blade.php</url>
-          <line>331</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/home.blade.php</url>
           <line>12</line>

@@ -37,6 +37,8 @@ Route::post('/followers', 'FolllowController@index')->name('user_follow')->middl
 Route::get('/settings', 'SettingController@index')->name('settings')->middleware('auth');
 Route::post('/settings/{id}', 'SettingController@update')->name('update-profile')->middleware('auth');
 
+Route::post('/create_comment/{id}','CommentController@create_comment')->name('create.coment')->middleware('auth');
+
 
 
 Route::post('/logout',function (Request $request){
